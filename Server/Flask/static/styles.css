@@ -1,0 +1,382 @@
+* {
+	box-sizing: border-box;
+  }
+  body {
+	font-family: Verdana;
+	margin: 0;
+  }
+  header {
+	background-color: #f71735;
+	background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+	padding: 15px;
+	text-align: left;
+	color: white;
+  }
+  header img {
+	float: left;
+  }
+  main {
+	overflow: auto;
+  }
+  nav {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	text-align: center;
+  }
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  nav li {
+	float: left;
+  }
+  nav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  nav a:hover:not(.active) {
+	background-color: #111;
+  }
+  
+  nav a.active {
+	background-color: #4caf50;
+  }
+  section {
+	width: 60%;
+	padding: 0 20px;
+  }
+  #offre {
+	width: 100%;
+  
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	
+  }
+  #offresearch {
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+  }
+  label {
+	width: 100%;
+	max-width: 300px;
+  }
+  /* /////////////////////////// search bar styling ///////////////////////////// */
+  .inputsearch {
+	position: relative;
+	width: 100%;
+	display: block;
+	padding: 15px;
+	background-color: white;
+	border: 2px solid black;
+	color: #111;
+	font-size: 15px;
+	box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+	height: 58px;
+	transform: skew(-3deg, 1deg);
+	font-family: "Knewave", cursive;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+  }
+  .inputsearch:focus,
+  .inputsearch:valid {
+	outline: none;
+  }
+  .inputsearch:focus ~ .search li:nth-child(1)::before,
+  .inputsearch:valid ~ .search li:nth-child(1)::before {
+	filter: blur(20px);
+	transform: translate(0, -35px) rotate(-210deg);
+  }
+  .inputsearch:focus ~ .search li:nth-child(1)::after,
+  .inputsearch:valid ~ .search li:nth-child(1)::after {
+	filter: blur(0);
+	transform: scale(1) rotate(0);
+  }
+  .inputsearch:focus ~ .search li:nth-child(2)::before,
+  .inputsearch:valid ~ .search li:nth-child(2)::before {
+	filter: blur(20px);
+	transform: translate(0, -35px) rotate(-210deg);
+  }
+  .inputsearch:focus ~ .search li:nth-child(2)::after,
+  .inputsearch:valid ~ .search li:nth-child(2)::after {
+	filter: blur(0);
+	transform: scale(1) rotate(0);
+  }
+  .inputsearch:focus ~ .search li:nth-child(3)::before,
+  .inputsearch:valid ~ .search li:nth-child(3)::before {
+	filter: blur(20px);
+	transform: translate(0, -35px) rotate(-210deg);
+  }
+  .inputsearch:focus ~ .search li:nth-child(3)::after,
+  .inputsearch:valid ~ .search li:nth-child(3)::after {
+	filter: blur(0);
+	transform: scale(1) rotate(0);
+  }
+  .inputsearch:focus ~ .search li:nth-child(4)::before,
+  .inputsearch:valid ~ .search li:nth-child(4)::before {
+	filter: blur(20px);
+	transform: translate(0, -35px) rotate(-210deg);
+  }
+  .inputsearch:focus ~ .search li:nth-child(4)::after,
+  .inputsearch:valid ~ .search li:nth-child(4)::after {
+	filter: blur(0);
+	transform: scale(1) rotate(0);
+  }
+  .inputsearch:focus ~ .search li:nth-child(5)::before,
+  .inputsearch:valid ~ .search li:nth-child(5)::before {
+	filter: blur(20px);
+	transform: translate(0, -35px) rotate(-210deg);
+  }
+  .inputsearch:focus ~ .search li:nth-child(5)::after,
+  .inputsearch:valid ~ .search li:nth-child(5)::after {
+	filter: blur(0);
+	transform: scale(1) rotate(0);
+  }
+  .inputsearch:focus ~ .search li:nth-child(6)::before,
+  .inputsearch:valid ~ .search li:nth-child(6)::before {
+	filter: blur(20px);
+	transform: translate(0, -35px) rotate(-210deg);
+  }
+  .inputsearch:focus ~ .search li:nth-child(6)::after,
+  .inputsearch:valid ~ .search li:nth-child(6)::after {
+	filter: blur(0);
+	transform: scale(1) rotate(0);
+  }
+  .inputsearch:focus ~ .search li:nth-child(1)::after,
+  .inputsearch:valid ~ .search li:nth-child(1)::after {
+	transition-delay: 400ms;
+  }
+  .inputsearch:focus ~ .search li:nth-child(2)::after,
+  .inputsearch:valid ~ .search li:nth-child(2)::after {
+	transition-delay: 600ms;
+  }
+  .inputsearch:focus ~ .search li:nth-child(3)::after,
+  .inputsearch:valid ~ .search li:nth-child(3)::after {
+	transition-delay: 800ms;
+  }
+  .inputsearch:focus ~ .search li:nth-child(4)::after,
+  .inputsearch:valid ~ .search li:nth-child(4)::after {
+	transition-delay: 1000ms;
+  }
+  .inputsearch:focus ~ .search li:nth-child(5)::after,
+  .inputsearch:valid ~ .search li:nth-child(5)::after {
+	transition-delay: 1200ms;
+  }
+  .inputsearch:focus ~ .search li:nth-child(6)::after,
+  .inputsearch:valid ~ .search li:nth-child(6)::after {
+	transition-delay: 1400ms;
+  }
+  
+  label {
+	position: relative;
+  }
+  
+  .search {
+	position: absolute;
+	top: 38px;
+	left: -4px;
+	margin: 0;
+	list-style: none;
+	padding-left: 22px;
+	position: absolute;
+	display: flex;
+	pointer-events: none;
+	transition: 200ms;
+  }
+  .search li {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: transparent;
+	pointer-events: none;
+	transition: 500ms ease-in-out;
+  }
+  .search li ::selection {
+	color: transparent;
+  }
+  .search li::after,
+  .search li::before {
+	color: black;
+	position: absolute;
+	transition: 500ms ease-in-out;
+  }
+  .search li::before {
+	top: -20px;
+  }
+  .search li::after {
+	top: -63px;
+	transform: scale(0) rotate(210deg);
+	filter: blur(20px);
+  }
+  .search li[s]::before {
+	content: attr(s) "s";
+	transition-delay: 200ms;
+  }
+  .search li[s]::after {
+	content: attr(s) "s";
+	left: 12px;
+	color: #666;
+  }
+  .search li[e]::before {
+	content: attr(e) "e";
+	transition-delay: 400ms;
+  }
+  .search li[e]::after {
+	content: attr(e) "e";
+	left: 24px;
+	color: #666;
+  }
+  .search li[a]::before {
+	content: attr(a) "a";
+	transition-delay: 600ms;
+  }
+  .search li[a]::after {
+	content: attr(a) "a";
+	left: 36px;
+	color: #666;
+  }
+  .search li[r]::before {
+	content: attr(r) "r";
+	transition-delay: 800ms;
+  }
+  .search li[r]::after {
+	content: attr(r) "r";
+	left: 48px;
+	color: #666;
+  }
+  .search li[c]::before {
+	content: attr(c) "c";
+	transition-delay: 1000ms;
+  }
+  .search li[c]::after {
+	content: attr(c) "c";
+	left: 60px;
+	color: #666;
+  }
+  .search li[h]::before {
+	content: attr(h) "h";
+	transition-delay: 1200ms;
+  }
+  .search li[h]::after {
+	content: attr(h) "h";
+	left: 72px;
+	color: #666;
+  }
+  
+  /* /////////////////////////// search bar styling ///////////////////////////// */
+  
+  .tablestyle {
+	height: 10%;
+	overflow: scroll;
+	margin-right: auto;
+	margin-left: auto;
+  
+	width: 100%;
+  
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	display: table;
+  }
+  
+  .row {
+	display: table-row;
+	background: #f6f6f6;
+  }
+  .row:nth-of-type(odd) {
+	background: #e9e9e9;
+  }
+  .row.header {
+	font-weight: 900;
+	color: #ffffff;
+	background-color: #f71735;
+	background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+  }
+  
+  .cell {
+	padding: 6px 12px;
+	display: table-cell;
+  }
+  
+  footer {
+	background-color: #f71735;
+	background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+	text-align: center;
+	padding: 10px;
+	margin-top: 7px;
+  }
+  /* Style all font awesome icons */
+  .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+	background: #3b5998;
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	background: #55acee;
+	color: white;
+  }
+  @media only screen and (max-width: 620px) {
+	/* For mobile phones: */
+	nav,
+	section {
+	  width: 100%;
+	}
+	.tablestyle {
+	  display: block;
+	}
+	.row {
+	  padding: 14px 0 7px;
+	  display: block;
+	}
+	.row.header {
+	  padding: 0;
+	  height: 6px;
+	}
+	.row.header .cell {
+	  display: none;
+	}
+	.row .cell {
+	  margin-bottom: 10px;
+	}
+	.row .cell:before {
+	  margin-bottom: 3px;
+	  content: attr(data-title);
+	  min-width: 98px;
+	  font-size: 10px;
+	  line-height: 10px;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  color: #969696;
+	  display: block;
+	}
+	.cell {
+	  padding: 2px 16px;
+	  display: block;
+	}
+  }

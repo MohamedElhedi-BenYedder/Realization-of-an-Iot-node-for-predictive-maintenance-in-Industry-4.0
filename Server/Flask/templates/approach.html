@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Predicitive Maintenance IoT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}" />
+    <!-- add icon link -->
+    <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+     <!--<script src="scripts/main.js"></script>-->
+  </head>
+
+  <body>
+    <header>
+      <h1 id="header">Predicitive Maintenance IoT</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="Engines">Engines</a></li>
+        <li><a href="Approach">Approach</a></li>
+        <li><a href="DataWrangling">Data Wrangling</a></li>
+        <li><a href="ExploratoryDataAnalysis">Exploratory Data Analysis</a></li>
+        <li><a href="ModelSelection">Model Selection</a></li>
+        <li><a href="Prediction">Prediction</a></li>
+        
+      </ul>
+    </nav>
+    <main>
+      
+      <section id="Connected-Devices">
+        <h2>Connected Devices</h2>
+      </section>
+      <section>
+        <img src="{{url_for('static', filename='slides/approach1.png')}}" width="175%"> 
+        <img src="{{url_for('static', filename='slides/approach2.png')}}" width="175%">
+      </section>
+
+      <script>var exports = {"__esModule": true};</script>
+      <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+    </main>
+    <footer>
+      
+      <p>
+        &copy;&nbsp;2020&nbsp;-&nbsp;<a
+          rel="author"
+          href="mohamedelhedi.benyedder@supcom.tn"
+          id="author"
+          >Mohamed Elhedi Ben Yedder</a
+        >
+        - All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
